@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800|Roboto:400,500,700,900');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.mrt-30 {
+    margin-top: 30px;
+}
+
+.mr30 {
+    margin: 30px 0;
+}
+
+button {
+    background: transparent;
+    border: 0;
+}
+
+.pd30 {
+    padding: 30px 0;
+}
+
+.pdt30 {
+    padding-top: 30px;
+}
+
+.section-padding {
+    padding: 70px 0;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 2px;
+    color: #5f27cd;
+}
+
+.section-title span {
+    color: #5eba55;
+}
+
+.hover-button a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    background: #5f27cd;
+    transition: 0.5s;
+}
+
+.hover-button a:hover {
+    border-radius: 5px;
+}
+
+/*===============main header css end=============*/
+
+/*is sticky css*/
+
+.is-sticky .main-header {
+	background: rgba(255, 255, 255, 1);
+	z-index: 9999 !important;
+}
+
+.is-sticky .main-menu ul li a {
+	padding: 22px 14px;
+}
+.is-sticky .main-logo a {
+	padding: 16px 0;
+}
+
+.is-sticky .main-logo img {
+	width: 65%;
+}
+.is-sticky .head-call {
+	padding: 20px 0;
+	text-align: right;
+}
+.main-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid #6b3bc9;
+    transition: 0.5s all;
+}
+.sticky-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: 0.5s all;
+}
+.main-logo img {
+    width: 80%;
+    transition: 0.5s all;
+}
+
+.main-logo a {
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.main-menu {
+    text-align: right;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu ul li a {
+    color: #5f27cd;
+    text-transform: uppercase;
+    padding: 30px 14px;
+    display: block;
+    transition: all 0.35s;
+    font-weight: 600;
+}
+
+.main-menu ul .active a {
+    color: #5f27cd;
+}
+
+.main-menu ul li:last-child a {
+    padding-right: 0;
+}
+
+.main-menu ul li a:hover {
+    color: #f33a0f;
+}
+
+.main-menu ul li ul {
+    z-index: 999999;
+    position: absolute;
+    width: 180px;
+    top: 200%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+    background: rgba(255, 255, 255, 1);
+    padding: 0px 0px;
+    border-top: 3px solid #8e231c;
+    box-shadow: 0px 0px 7px 1px #888888;
+    text-align: left;
+}
+
+.anchor {
+    cursor: pointer;
+}
+
+.main-menu ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.main-menu .sub-menu-child {
+    left: 138%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-menu .sub-menu-child {
+    left: 138%;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+.sub-menu-parent li {
+    width: 100%;
+}
+.sub-menu-parent:hover .sub-menu-child {
+    visibility: visible !important;
+    opacity: 1 !important;
+    left: 128%;
+}
+
+.sub-menu-child li {
+    display: block;
+    width: 100%;
+}
+
+.sub-menu-parent a {
+    padding: 10px 12px !important;
+}
+
+.head-call {
+    padding: 28px 0;
+    text-align: right;
+    transition: 0.5s all;
+}
+
+.head-call i {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5f27cd;
+}
+
+.head-call p {
+    display: inline-block;
+    font-weight: 900;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #5f27cd;
+}
+
+/*===============main header css end=============*/
+
+/*===============main slider css start=============*/
+
+/*====SLIDER CSS START====*/
+
+.main-slider {
+    position: relative;
+}
+
+.slider-item {
+    height: 100vh;
+    width: 100% !important;
+    position: relative;
+    z-index: 9;
+}
+
+.slider-item img {
+    height: 100%;
+    max-width: 100%;
+}
+
+#slider {
+    position: relative;
+}
+
+.main-slider .owl-nav button.owl-prev {
+    background: #5f27cd;
+    left: 2%;
+    transform: translateX(-2%);
+    position: absolute;
+    height: 40px !important;
+    width: 40px !important;
+    z-index: 999999;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.main-slider .owl-nav button.owl-prev:hover {
+    background: #fff;
+}
+
+.main-slider .owl-nav button.owl-prev:hover i {
+    color: #5f27cd
+}
+
+.main-slider .owl-nav button.owl-next {
+    right: 2%;
+    transform: translateX(-2%) !important;
+    position: absolute;
+    height: 40px !important;
+    width: 40px !important;
+    z-index: 999999;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+    background: #5f27cd;
+    border-radius: 5px;
+}
+
+.main-slider .owl-nav button.owl-next:hover {
+    background: #fff;
+}
+
+.main-slider .owl-nav button.owl-next:hover i {
+    color: #5f27cd
+}
+
+.main-slider .owl-nav button i {
+    font-size: 28px !important;
+    color: #fff;
+}
+
+#slider.main-slider .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translate(-50%, -50%);
+}
+
+#slider .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+#slider .main-slider button.owl-dot {
+    background: #fff;
+    border-radius: 5px;
+    color: inherit;
+    font: inherit;
+    height: 14px;
+    width: 14px;
+    margin: 10px 2px;
+    padding: 0 !important;
+    display: inline-block;
+}
+
+#slider .main-slider button.owl-dot.active {
+    background: #5f27cd;
+    transition: 0.35s;
+}
+
+/*===============main slider css end=============*/
+
+/*===============about section css start=============*/
+.about-text-area h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #5f27cd;
+}
+
+.about-text {
+    padding: 20px 0;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.btn-button {
+    display: inline-block;
+    background: #5f27cd;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 44px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 999;
+}
+
+.btn-button::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 100%;
+    background: #6b3bc9;
+    left: 0;
+    top: 0;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+    z-index: -1;
+}
+
+.btn-button:hover {
+    color: #fff;
+}
+
+.btn-button:hover::before {
+    width: 100%;
+}
+
+/*===============about section css end=============*/
+
+
+/*===============product section css start=============*/
+#product {
+    background: #f9f9f9;
+}
+
+.product-item img {
+	width: 100%;
+	height: 250px;
+	padding: 0 8px;
+}
+.product-item {
+    border: 4px solid #5f27cd;
+    border-radius: 5px;
+    margin: 15px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item::after {
+    position: absolute;
+    left: -160px;
+    top: -160px;
+    width: 0%;
+    height: 0%;
+    content: "";
+    background: rgba(95, 39, 205, 0.8);
+    transform: rotate(45deg);
+    transition: 0.7s all;
+}
+
+.product-item:hover::after {
+    width: 200%;
+    height: 200%;
+}
+
+.product-item p {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #5f27cd;
+}
+
+/*===============product section css end=============*/
+
+/*===============contact section css start=============*/
+
+
+.contact-area {
+    padding: 100px 0px;
+}
+
+.contact-area .sec-title h6 {
+    color: #5f27cd;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+}
+
+.contact-area .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-area .contact-form input {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid #e5e5e5;
+    transition: all 500ms ease;
+    border: 2px solid #5f27cd;
+}
+
+.contact-area .contact-form textarea {
+    width: 100%;
+    height: 190px;
+    resize: none;
+    border-radius: 0px;
+    padding-left: 10px;
+    border: 2px solid #5f27cd;
+    transition: all 500ms ease;
+}
+
+.contact-area .contact-form .form-group button {
+    margin-top: 10px;
+}
+
+.contact-area .contact-text {
+    margin-left: 50px;
+}
+
+.contact-area .contact-text .sec-title p {
+    line-height: 28px;
+    margin-top: -8px;
+    padding-bottom: 10px;
+}
+
+.contact-area .contact-link .item {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.contact-area .contact-link .item strong {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-area .contact-link .item .icon-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 62px;
+    height: 62px;
+    line-height: 58px;
+    text-align: center;
+    background: #5f27cd;
+    border: 4px solid #4d0bcf;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+.contact-area .contact-link .item:hover .icon-box {
+    border-color: #780139;
+    transition: all 500ms ease;
+}
+
+.contact-area .contact-link .item p a {
+    color: #777777;
+    transition: all 500ms ease;
+}
+
+.contact-area .contact-link .item p a:hover {
+    color: #53c629;
+    transition: all 500ms ease;
+}
+
+.contact-area .contact-link .item i {
+    font-size: 20px;
+    color: #ffffff
+}
+
+.btn-style-one {
+    background: #5f27cd;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 0 !important;
+}
+
+/*===============contact section css end=============*/
+
+/*===============footer section css start=============*/
+#footer {
+    background: #5f27cd;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.copyright a {
+    color: #5a27ff;
+    background: #fff;
+    padding: 2px 12px;
+    margin-left: 8px;
+    border-radius: 50px;
+}
+#scrollUp {
+    height: 38px;
+    width: 38px;
+    background: url('../images/scroll.png');
+    bottom: 50px;
+    right: 50px;
+    text-indent: -999999px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+/*===============footer section css end=============*/
+
+
+
+/*===============bread crumb start====================*/
+#breadcrumb {
+    background: url(../images/breacrumb.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.bread-crumb {
+    text-align: center;
+    padding: 80px 0;
+    border-radius: 53px;
+    position: relative;
+    z-index: 1;
+}
+
+.bread-crumb-inner {
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transform: translateY(-90%);
+    right: 0;
+    text-align: center;
+}
+
+.breadcrumb-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.divider {
+    height: 2px;
+    width: 10px;
+    background: #fff;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.bread-crumb h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 600;
+}
+
+.bread-crumb ul li {
+    display: inline-block;
+}
+
+.bread-crumb ul li a {
+    display: block;
+    text-transform: capitalize;
+    color: #222;
+    font-size: 16px;
+}
+
+.bread-crumb ul .active a {
+    color: #5f27cd;
+}
+
+.small_text {
+    font-size: 14px
+}.copyright{
+    text-transform: capitalize;
+}
+
+/*=========bread crumb css end=========*/
+
+/*=========product details crumb css start=========*/
+
+/*===============blog details css start====================*/
+#blog-details {
+    background: #f5f5f9;
+}
+
+#blog-details .blog-image {
+    height: auto;
+}
+
+.blog-details-img img {
+    width: 100%;
+}
+
+.blog-details {
+    background: #fff;
+    padding: 30px;
+}
+
+.single-blog .blog-body {
+    background: #fff;
+    padding: 30px 15px;
+    margin: 30px 0;
+}
+
+
+.single-blog .blog-image {
+    height: 255px;
+}
+
+.blog-info {
+    background: #fff;
+    padding: 10px 18px;
+}
+
+.blog-search form {
+    background: #fff;
+    height: 38px;
+    border-radius: 7px;
+    width: 100%;
+}
+.single-blog .blog-body:first-child {
+    margin-top: 0;
+}
+.product-name {
+	font-weight: 600;
+	color: #5f27cd;
+	font-size: 16px;
+}
+.blog-details-info {
+	padding: 30px;
+}
+.product-des-title {
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #5f27cd;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.blog-search button {
+    width: 20%;
+    margin-top: 3%;
+}
+
+.blog-search .form-control {
+    border-radius: 0;
+}
+
+.blog-search input,
+.blog-search input:focus {
+    width: 80%;
+    float: left;
+    background: transparent;
+    border: transparent;
+    box-shadow: 0 0;
+}
+
+.sidebar-link {
+    margin-top: 20px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.sidebar-link ul li {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px dotted #ddd;
+}
+
+.sidebar-link ul li a {
+    font-weight: 600;
+    color: #555;
+    display: block;
+    padding: 5px 0;
+    transition: 0.35s all;
+}
+
+.sidebar-link ul li a:hover {
+    transform: translateX(5px);
+    color: #5f27cd;
+}
+
+.sidebar-link ul li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.sidebar-title {
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sidebar-follow ul li {
+    display: inline-block;
+    height: 32px;
+    width: 35px;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.sidebar-follow ul .facebook {
+    background: #3A559F;
+}
+
+.sidebar-follow ul .youtube {
+    background: #F61C0D;
+}
+
+.sidebar-follow ul li a {
+    display: block;
+    color: #fff;
+}
+
+.sidebar-latestpost {
+    padding: 30px;
+    background: #fff;
+    margin-top: 20px;
+}
+.sidebar-latepost-img {
+	height: 135px;
+	overflow: hidden;
+}
+.sidebar-latepost-img img {
+    width: 100%;
+}
+
+.sidebar-latestpost-info a {
+    color: #555;
+    padding: 3px 0;
+    display: inline-block;
+    transition: 0.5s all;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.sidebar-latestpost-info a:hover {
+    color: #5f27cd;
+}
+
+.sidebar-latestpost-info p {
+    color: #5f27cd;
+    text-transform: capitalize;
+}
+
+.latestblog-item {
+	margin-bottom: 20px;
+	border: 5px solid #5f27cd;
+	padding: 0px 16px;
+}
+.sidebar-latepost-img img {
+	width: 90%;
+	height: 100%;
+}
+
+
+/*===============blog details css end====================*/
+
+/*=========product details crumb css end=========*/

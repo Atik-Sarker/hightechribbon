@@ -1,0 +1,150 @@
+@media screen and (min-width:992px) and (max-width: 1199px) {}
+
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .main-logo a {
+        padding: 12px 0;
+    }
+
+    .main-logo img {
+        width: 100%;
+    }
+
+    .is-sticky .main-logo img {
+        width: 80%;
+    }
+
+    .head-call {
+        padding: 16px 0;
+    }
+
+    .main-menu ul li a {
+        padding: 18px 6px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:420px) and (max-width:767px) {
+    .container {
+        width: 420px
+    }
+
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .container {
+        width: 320px;
+    }
+
+    /*======= main  logo ======*/
+
+    .main-logo a {
+        padding: 0 0;
+    }
+
+    .main-logo img {
+        width: 100%;
+    }
+
+    .mean-container .mean-bar {
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #header {
+        padding: 20px 0;
+    }
+
+    #header img {
+        width: 130px;
+        margin-left: 20px;
+    }
+
+    .mean-container a.meanmenu-reveal span {
+        background: #5f27cd;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        color: #5f27cd;
+        margin-top: 18px;
+    }
+
+    .mean-container .mean-nav {
+        background: #fff;
+    }
+
+    .mean-container .mean-nav ul li a {
+        color: #5f27cd;
+        font-weight: 600;
+    }
+
+    .mean-container .mean-nav ul li {
+        border-bottom: 1px dotted #5f27cd !important;
+    }
+
+    .mean-container .mean-nav ul li a.mean-expand:hover {
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .mean-container .mean-nav ul li a.mean-expand {
+        height: 29px;
+    }
+
+    .mean-container .mean-nav ul li:last-child {
+        border-bottom: 1px solid transparent !important;
+    }
+
+    /*===mean menu end====*/
+
+    .slider-item {
+        height: 350px;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+    }
+
+
+    .about-image {
+        margin-top: 50px;
+    }
+
+    /*===slider menu end====*/
+
+    #quick-contact::after {
+        width: 100%;
+    }
+
+    .copyright {
+        margin: 9px 0 !important;
+        text-align: center;
+    }
+
+    .bread-crumb {
+        padding: 38px 0;
+    }
+
+    .contact-area .contact-text {
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:620px) {
+
+    .slider-text {
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 0px 50px;
+    }
+
+}
